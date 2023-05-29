@@ -1,0 +1,30 @@
+Annotations
+-------------------------------------------------------------------------------------------------------
+@Configuration - Used to manage bean configurations
+@ComponentScan - Automatically scan for components in the package
+@Bean - Object that is managed by Spring Container
+@Component - Class that is managed by Spring Container
+@Service - Used if the class is required to define business logic
+@Controller - Used if the class is required to handle web requests and REST Apis
+@Repository - Used if the class is required to access the database
+@Primary - Indicates the primary bean to be used when there are multiple beans
+@Qualifier - Same function as Primary but with higher priority
+@Lazy - Initializes only when the bean is requested
+@Scope(value=Configurable.SCOPE_PROTOTYPE) - New object will be created everytime
+@Scope(value=Configurable.SCOPE_SINGLETON) - Only one object will be created
+@PostConstruct - Used to execute something after the bean is created
+@PreDestroy - Used to execute something before the bean is destroyed
+@Named - Used to give a specific name to a bean
+@Inject - Used to inject dependencies into a bean
+------------------------------------------------------------------------------------------------------
+Concepts
+-------------------------------------------------------------------------------------------------------
+DependencyInjection - Used to inject dependencies into a class
+ConstructorInjection - Used to inject dependencies into a class through its constructor
+SetterInjection - Used to inject dependencies into a class through setter methods
+FieldInjection - Used to inject dependencies into a class through its fields
+IOC Container - Manages the beans and their dependencies
+BeanFactory - Basic management of the beans and their dependencies
+ApplicationContext - Advanced version of BeanFactory with more features
+SpringBeans - Objects that are managed by Spring IOC
+Auto-Wiring - Automatically inject dependencies into beans
