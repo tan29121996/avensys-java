@@ -1,0 +1,7 @@
+
+insert into Student (id, name, address)
+values(1,'Siddu','India');
+
+delete from Student where id=1;
+
+select * from Student
