@@ -1,66 +1,58 @@
 package com.java.methods;
 
-abstract class Animal
-{
-	abstract public void run();
-	abstract public void hunt();
+// This is a purely abstract class.
+// 1. An abstract Parent class can have an abstract Child class.
+abstract class Bird { 
+  abstract public void fly();
+  abstract public void eat();
 }
-abstract class Lion extends Animal
-{
-	public void run() {
-		System.out.println("Lions run on all fours");
-	}
+
+// This is an impure abstract class.
+// - 
+abstract class Eagle extends Bird {
+  public void fly() {
+    System.out.println("The eagle flies at a high altitude.");
+  }
 }
-abstract class Human extends Animal
-{
-	public void run() {
-		System.out.println("Humans run on two legs");
-	}
+
+abstract class Sparrow extends Bird {
+  public void fly() {
+    System.out.println("The sparrow flies at a low altitude.");
+  }
 }
-class AsianLion extends Lion
-{
-	public void hunt() {
-		System.out.println("Asian Lions hunt in forests");
-	}
+
+// An abstract class can have a concrete class as a child.
+class GoldenEagle extends Eagle {
+  public void eat() {
+    System.out.println("Golden eagle hunts and eats fishes.");
+  }
 }
-class AfricanLion extends Lion
-{
-	public void hunt() {
-		System.out.println("African Lions hunt in savannah");
-	}
+
+class SerpentEagle extends Eagle {
+  public void eat() {
+    System.out.println("Serpent Eagle hunts and eats snakes.");
+  }
 }
-class VegHuman extends Human
-{
-	public void hunt() {
-		System.out.println("Vegetarian Humans plant vegetables");
-	}
+
+class SwanSparrow extends Sparrow {
+  public void eat() {
+    System.out.println("The Swan Sparrow eats insects.");
+  }
 }
-class NonVegHuman extends Human
-{
-	public void hunt() {
-		System.out.println("Non-Vegetarian Humans hunt animals");
-	}
+
+class WhiteSparrow extends Sparrow {
+  public void eat() {
+    System.out.println("The White Sparrow eats grains");
+  }
 }
-class Forest
-{
-	public void acceptAnimals(Animal ref) {
-		ref.run();
-		ref.hunt();
-	}
+
+class Sky {
+  public void acceptBirds (Bird bird) {
+    bird.fly();
+    bird.eat();
+  }
 }
-class Abstraction extends Object {
-	
-	public static void main(String[] args) {
-		
-		AsianLion asl = new AsianLion();
-		AfricanLion afl = new AfricanLion();
-		VegHuman vh = new VegHuman();
-		NonVegHuman nvh = new NonVegHuman();
-		Forest f = new Forest();
-		f.acceptAnimals(asl);
-		f.acceptAnimals(afl);
-		f.acceptAnimals(vh);
-		f.acceptAnimals(nvh);
-	
-	} 
+
+public class Abstraction {
+  
 }

@@ -3,7 +3,7 @@ package com.java.methods;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Exceptions {
+public class MultipleExceptions {
 	public static void main(String[] args) {
 		try {
 			System.out.println("Connection Established");

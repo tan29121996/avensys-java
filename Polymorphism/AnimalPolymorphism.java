@@ -48,7 +48,7 @@ class Forest
 	}
 }
 
-public class Polymorphism {
+public class AnimalPolymorphism {
 	public static void main(String[] args) {
 		Tiger ta = new Tiger(); 
 		Lion la = new Lion();

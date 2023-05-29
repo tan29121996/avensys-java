@@ -91,7 +91,7 @@ class SI {
     }
 }
 
-public class Interface {
+public class SimpleInterestInterface {
     public static void main(String[] args) {
         Businessman1 bm1 = new Businessman1();
         Businessman2 bm2 = new Businessman2();

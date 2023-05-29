@@ -39,7 +39,7 @@ class BiologyTeacher extends Teacher
 	}
 }
 
-public class Inheritance {
+public class TeacherInheritance {
 	public static void main(String[] args) {
 		PhysicsTeacher pt = new PhysicsTeacher();
 		pt.markAttendance();

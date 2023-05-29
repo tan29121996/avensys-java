@@ -27,7 +27,7 @@ class Student
 	}
 }
 
-public class Static extends Object {
+public class StudentStatic extends Object {
 	
 	public static void main(String[] args) {
 		Student s1 = new Student();
